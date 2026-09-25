@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-vermont",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vermont Open Data (data.vermont.gov) Socrata MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3b4480446c98ca0abd153bd9943c9f2aef9446f5c495957f3699c1bc7c47bf17",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-82df02b269950122083de4fa8793f02416b7c62d4d770633b8365e0b3b442ad6",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }
