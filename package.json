@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-vermont",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Vermont Open Data (data.vermont.gov) Socrata MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-vermont": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-vermont"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-vermont.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-vermont",
   "pipeworx": {
-    "sourceHash": "v1-6e77cdc0ccc5bca21392cde5c8b9a622947d4525412bc0fc50219b2756245ee8",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "data-vermont",
+    "gatewaySlug": "data-vermont",
+    "sourceHash": "v1-2fafd6c9ab67e09dbf5fd291b63a2c476c2f77d82d907b35cc296cdcba2f78bf",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
